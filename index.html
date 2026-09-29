@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pintura e Acabamento em São Paulo | GM Renova Home</title>
+  <meta name="description" content="Pintura e acabamento, envernizamento, forro de drywall e instalação de acessórios em São Paulo e Grande São Paulo. Solicite seu orçamento com a GM Renova Home.">
+  <meta name="theme-color" content="#0f2f36">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <meta property="og:title" content="GM Renova Home | Pintura e Acabamento em São Paulo">
+  <meta property="og:description" content="Renovação de ambientes com pintura, acabamento, envernizamento, drywall e instalação de acessórios.">
+  <meta property="og:type" content="website">
+  <style>
+    :root{
+      --ink:#10252a;
+      --muted:#607176;
+      --bg:#f4f6f5;
+      --paper:#ffffff;
+      --green:#0f2f36;
+      --green-2:#1f5660;
+      --accent:#d96f45;
+      --accent-soft:#f3dfd6;
+      --line:#dce4e3;
+      --shadow:0 20px 55px rgba(15,47,54,.11);
+      --radius:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+    img{display:block;max-width:100%}
+    a{color:inherit}
+    .container{width:min(calc(100% - 36px),var(--max));margin:auto}
+    .eyebrow{font-family:"Sora","Inter",sans-serif;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--accent)}
+    h1,h2,h3{font-family:"Sora","Inter",ui-sans-serif,system-ui,sans-serif;line-height:1.06;letter-spacing:-.035em;margin:0;font-weight:700}
+    h1{font-size:clamp(2.7rem,6vw,5.6rem)}
+    h2{font-size:clamp(2.1rem,4vw,3.7rem)}
+    h3{font-size:1.5rem}
+    p{margin:.7rem 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;border-radius:12px;padding:15px 22px;text-decoration:none;font-family:"Sora","Inter",sans-serif;font-weight:700;border:1px solid transparent;transition:.2s ease;cursor:pointer}
+    .btn-primary{background:var(--green);color:white}
+    .btn-primary:hover{background:#163f47;transform:translateY(-1px)}
+    .btn-secondary{border-color:rgba(255,255,255,.45);color:white;background:rgba(255,255,255,.08);backdrop-filter:blur(10px)}
+    .btn-light{background:var(--accent);color:white;box-shadow:0 14px 34px rgba(217,111,69,.27)}
+    .site-header{position:absolute;z-index:20;top:0;left:0;right:0;padding:22px 0;color:white}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-family:"Sora","Inter",sans-serif;font-weight:800;letter-spacing:-.025em;font-size:1.04rem}
+    .brand small{display:block;font-size:.68rem;font-weight:600;opacity:.75;letter-spacing:.12em;text-transform:uppercase}
+    .nav-links{display:flex;gap:24px;align-items:center}
+    .nav-links a{text-decoration:none;font-weight:700;font-size:.92rem}
+    .hero{min-height:780px;position:relative;display:grid;align-items:end;color:white;overflow:hidden;background:#0f2f36}
+    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.02)}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,31,37,.90) 0%,rgba(8,31,37,.62) 43%,rgba(8,31,37,.14) 76%),linear-gradient(0deg,rgba(8,31,37,.60) 0%,transparent 50%)}
+    .hero-content{position:relative;z-index:2;padding:185px 0 86px;max-width:760px}
+    .hero p{font-size:clamp(1.05rem,2vw,1.28rem);max-width:660px;color:rgba(255,255,255,.88);margin:24px 0 30px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;font-size:.9rem;color:rgba(255,255,255,.77)}
+    .hero-trust span:before{content:"✓";margin-right:7px;color:#e7c79e;font-weight:900}
+    section{padding:92px 0}
+    .section-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:44px}
+    .section-head p{color:var(--muted);max-width:560px}
+    .proof-strip{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);padding:26px 0}
+    .proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .proof-item{padding:8px 18px;border-left:1px solid var(--line)}
+    .proof-item:first-child{border-left:0}
+    .proof-item strong{display:block;font-size:.98rem}
+    .proof-item span{font-size:.84rem;color:var(--muted)}
+    .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .service{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:31px;position:relative;overflow:hidden;min-height:260px;box-shadow:0 10px 28px rgba(15,47,54,.045)}
+    .service.primary{background:linear-gradient(145deg,#0f2f36,#17434c);color:white}
+    .service .number{font-family:"Sora","Inter",sans-serif;font-size:.76rem;letter-spacing:.10em;font-weight:800;color:var(--accent);margin-bottom:30px}
+    .service p{color:var(--muted);max-width:540px}
+    .service.primary p{color:rgba(255,255,255,.74)}
+    .service-tag{display:inline-block;margin-top:18px;border:1px solid currentColor;border-radius:9px;padding:7px 11px;font-size:.72rem;font-weight:800;opacity:.72}
+    .why{background:#e9efee}
+    .why-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+    .why-photo{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5}
+    .why-photo img{width:100%;height:100%;object-fit:cover}
+    .checklist{display:grid;gap:17px;margin-top:30px}
+    .check{display:grid;grid-template-columns:42px 1fr;gap:13px;align-items:start}
+    .check i{font-style:normal;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--green);color:white;font-family:"Sora",sans-serif;font-weight:800}
+    .check strong{display:block}
+    .check span{color:var(--muted);font-size:.92rem}
+    .portfolio{background:var(--paper)}
+    .gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:160px;gap:12px}
+    .shot{border-radius:18px;overflow:hidden;position:relative}
+    .shot img{width:100%;height:100%;object-fit:cover;transition:.35s}
+    .shot:hover img{transform:scale(1.035)}
+    .shot:nth-child(1){grid-column:span 7;grid-row:span 3}
+    .shot:nth-child(2){grid-column:span 5;grid-row:span 2}
+    .shot:nth-child(3){grid-column:span 5;grid-row:span 2}
+    .shot:nth-child(4){grid-column:span 4;grid-row:span 2}
+    .shot:nth-child(5){grid-column:span 4;grid-row:span 2}
+    .shot:nth-child(6){grid-column:span 4;grid-row:span 2}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+    .step{padding-top:24px;border-top:2px solid var(--line)}
+    .step b{color:var(--accent);font-size:.8rem;letter-spacing:.12em}
+    .step h3{font-size:1.35rem;margin:10px 0}
+    .step p{color:var(--muted);font-size:.92rem}
+    .cta-section{padding:60px 0 92px}
+    .cta-box{background:linear-gradient(135deg,#0f2f36 0%,#17434c 100%);color:white;border-radius:26px;padding:54px;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center;box-shadow:var(--shadow)}
+    .cta-box p{color:rgba(255,255,255,.75);max-width:630px}
+    .cta-actions{display:flex;justify-content:flex-end}
+    .faq-list{display:grid;gap:12px;max-width:900px;margin-top:35px}
+    details{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+    summary{cursor:pointer;font-weight:850}
+    details p{color:var(--muted);font-size:.95rem}
+    footer{padding:42px 0;background:#0b252b;color:white}
+    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}
+    footer p{color:rgba(255,255,255,.62);font-size:.9rem}
+    .floating-wa{position:fixed;right:18px;bottom:18px;z-index:50;background:#19a463;color:white;text-decoration:none;border-radius:14px;padding:14px 18px;font-family:"Sora","Inter",sans-serif;font-weight:700;box-shadow:0 12px 30px rgba(0,0,0,.20)}
+    .mobile-menu{display:none}
+    @media(max-width:800px){
+      .nav-links a:not(.btn){display:none}
+      .site-header .btn{padding:11px 15px;font-size:.84rem}
+      .hero{min-height:690px}
+      .hero:after{background:linear-gradient(0deg,rgba(8,31,37,.92) 0%,rgba(8,31,37,.45) 75%)}
+      .hero-content{padding:150px 0 66px}
+      .section-head,.why-grid,.cta-box{grid-template-columns:1fr}
+      section{padding:70px 0}
+      .proof-grid{grid-template-columns:1fr 1fr}
+      .proof-item:nth-child(3){border-left:0}
+      .services-grid{grid-template-columns:1fr}
+      .process-grid{grid-template-columns:1fr 1fr}
+      .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:220px}
+      .shot,.shot:nth-child(n){grid-column:span 1;grid-row:span 1}
+      .shot:first-child{grid-column:span 2;grid-row:span 2}
+      .cta-actions{justify-content:flex-start}
+      .cta-box{padding:38px 28px}
+    }
+    @media(max-width:520px){
+      .container{width:min(calc(100% - 26px),var(--max))}
+      .proof-grid{grid-template-columns:1fr}
+      .proof-item,.proof-item:nth-child(3){border-left:0;border-top:1px solid var(--line);padding:14px 4px}
+      .proof-item:first-child{border-top:0}
+      .process-grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr;grid-auto-rows:270px}
+      .shot:first-child{grid-column:span 1;grid-row:span 1}
+      .floating-wa{left:13px;right:13px;text-align:center}
+      footer{padding-bottom:94px}
+      h1{font-size:3rem}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">GM RENOVA HOME<small>Renovação e acabamento</small></div>
+      <nav class="nav-links">
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a class="btn btn-secondary" href="https://wa.me/5511966891429?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20GM%20Renova%20Home." target="_blank" rel="noopener">Pedir orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-bg" src="assets/hero-pintura.jpg" alt="Serviço real de pintura e acabamento executado pela GM Renova Home">
+      <div class="container hero-content">
+        <div class="eyebrow">São Paulo e Grande São Paulo</div>
+        <h1>Acabamento que muda a percepção do seu ambiente.</h1>
+        <p>Pintura e acabamento são o foco da GM Renova Home, com serviços complementares de envernizamento, forro de drywall e instalação de acessórios para renovar residências e ambientes com atenção aos detalhes.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="https://wa.me/5511966891429?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20pintura%20e%20acabamento." target="_blank" rel="noopener">Solicitar orçamento no WhatsApp</a>
+          <a class="btn btn-secondary" href="#portfolio">Ver trabalhos reais</a>
+        </div>
+        <div class="hero-trust">
+          <span>Fotos de serviços reais</span>
+          <span>Atendimento em São Paulo e Grande SP</span>
+          <span>Orçamento conforme necessidade</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="proof-strip">
+      <div class="container proof-grid">
+        <div class="proof-item"><strong>Pintura e acabamento</strong><span>Serviço prioritário</span></div>
+        <div class="proof-item"><strong>Envernizamento</strong><span>Proteção e renovação da madeira</span></div>
+        <div class="proof-item"><strong>Forro de drywall</strong><span>Acabamento de ambientes</span></div>
+        <div class="proof-item"><strong>Instalação de acessórios</strong><span>Detalhes finais do espaço</span></div>
+      </div>
+    </div>
+
+    <section id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="eyebrow">Serviços</div><h2>Do acabamento principal aos detalhes finais.</h2></div>
+          <p>A comunicação prioriza aquilo que a GM Renova Home mais quer vender: pintura e acabamento. Os demais serviços entram como complemento, ajudando o cliente a resolver mais etapas da renovação com o mesmo contato.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service primary">
+            <div class="number">01 · PRINCIPAL</div>
+            <h3>Pintura e acabamento</h3>
+            <p>Renovação de paredes, tetos, áreas internas e externas com atenção ao preparo, uniformidade visual e finalização do ambiente.</p>
+            <span class="service-tag">Residencial · interno · externo</span>
+          </article>
+          <article class="service">
+            <div class="number">02</div>
+            <h3>Envernizamento</h3>
+            <p>Realce da madeira e renovação do acabamento de portas, batentes e outros elementos, preservando o aspecto natural e valorizando os detalhes.</p>
+            <span class="service-tag">Portas · batentes · madeira</span>
+          </article>
+          <article class="service">
+            <div class="number">03</div>
+            <h3>Forro de drywall</h3>
+            <p>Solução para criar um acabamento mais moderno e organizado no teto, com possibilidade de integração a iluminação e outros elementos do ambiente.</p>
+            <span class="service-tag">Forros · acabamento</span>
+          </article>
+          <article class="service">
+            <div class="number">04</div>
+            <h3>Instalação de acessórios</h3>
+            <p>Instalação de detalhes e acessórios para completar o ambiente após a renovação, conforme o escopo combinado no orçamento.</p>
+            <span class="service-tag">Finalização do ambiente</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container why-grid">
+        <div class="why-photo"><img src="assets/interior-acabamento.jpg" alt="Ambiente interno finalizado com pintura e acabamento"></div>
+        <div>
+          <div class="eyebrow">Por que a página foca em acabamento</div>
+          <h2>O cliente não compra só tinta. Ele compra o resultado final.</h2>
+          <p style="color:var(--muted);margin-top:20px">Em serviços de pintura, o receio costuma estar no que aparece depois: manchas, marcas, recortes mal feitos, sujeira, retrabalho ou um resultado diferente do esperado. Por isso, o site apresenta primeiro o resultado visual e as provas reais do serviço.</p>
+          <div class="checklist">
+            <div class="check"><i>1</i><div><strong>Entendimento do serviço</strong><span>O cliente explica o ambiente, necessidade e região de atendimento.</span></div></div>
+            <div class="check"><i>2</i><div><strong>Avaliação e orçamento</strong><span>O escopo é alinhado antes da execução, evitando promessas genéricas.</span></div></div>
+            <div class="check"><i>3</i><div><strong>Execução dos acabamentos</strong><span>O serviço é realizado conforme o que foi definido para aquele ambiente.</span></div></div>
+            <div class="check"><i>4</i><div><strong>Finalização</strong><span>Conferência do resultado e orientações conforme o serviço realizado.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="eyebrow">Portfólio real</div><h2>Resultados que ajudam o cliente a decidir.</h2></div>
+          <p>Em vez de imagens genéricas de banco, a página usa registros reais enviados pela empresa: pintura externa, acabamento interno, madeira envernizada e estruturas renovadas.</p>
+        </div>
+        <div class="gallery">
+          <div class="shot"><img src="assets/pintura-area-externa.jpg" alt="Pintura externa em imóvel"></div>
+          <div class="shot"><img src="assets/fachada-verde.jpg" alt="Fachada renovada com pintura verde"></div>
+          <div class="shot"><img src="assets/interior-acabamento.jpg" alt="Ambiente interno com pintura e acabamento"></div>
+          <div class="shot"><img src="assets/fachada-neutra.jpg" alt="Fachada clara renovada com pintura e acabamento"></div>
+          <div class="shot"><img src="assets/parede-acabamento.jpg" alt="Parede interna com acabamento"></div>
+          <div class="shot"><img src="assets/estrutura-metalica.jpg" alt="Estrutura e guarda-corpo com acabamento renovado"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="eyebrow">Como funciona</div><h2>Do primeiro contato ao acabamento.</h2></div>
+          <p>Uma jornada simples reduz a insegurança de quem ainda está comparando prestadores e ajuda a transformar o WhatsApp em um contato mais qualificado.</p>
+        </div>
+        <div class="process-grid">
+          <div class="step"><b>ETAPA 01</b><h3>Conte o que precisa</h3><p>Envie pelo WhatsApp o tipo de serviço, bairro e, se possível, fotos do ambiente.</p></div>
+          <div class="step"><b>ETAPA 02</b><h3>Alinhamento</h3><p>A necessidade e o escopo são entendidos para definir o próximo passo da avaliação.</p></div>
+          <div class="step"><b>ETAPA 03</b><h3>Orçamento</h3><p>O orçamento é definido de acordo com o serviço, condições do local e materiais envolvidos.</p></div>
+          <div class="step"><b>ETAPA 04</b><h3>Execução</h3><p>Após aprovação, o serviço é realizado conforme o combinado.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div><div class="eyebrow">Dúvidas frequentes</div><h2>Antes de pedir o orçamento.</h2></div>
+          <p>As respostas abaixo foram mantidas comerciais e seguras, sem inventar prazo, preço, materiais, anos de experiência ou condições que ainda precisam ser confirmadas pela empresa.</p>
+        </div>
+        <div class="faq-list">
+          <details open><summary>Vocês atendem quais regiões?</summary><p>A GM Renova Home atende São Paulo e Grande São Paulo. Para confirmar atendimento em um bairro ou cidade específica, envie a localização pelo WhatsApp.</p></details>
+          <details><summary>Como solicito um orçamento?</summary><p>Envie uma mensagem com o serviço desejado, bairro do imóvel e, se possível, fotos do ambiente. Isso ajuda a entender melhor o escopo inicial.</p></details>
+          <details><summary>O orçamento é igual para todos os serviços?</summary><p>Não. O valor depende do tipo de serviço, dimensão, condições da superfície, acessos, materiais e demais particularidades do local.</p></details>
+          <details><summary>Vocês realizam pintura interna e externa?</summary><p>Os registros enviados incluem serviços em ambientes internos e áreas externas. O escopo exato deve ser confirmado no orçamento de cada projeto.</p></details>
+          <details><summary>Existe garantia?</summary><p>As condições de garantia devem ser informadas no orçamento de acordo com o tipo de serviço contratado. Evitamos apresentar um prazo único sem confirmação formal.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <div class="eyebrow">Solicite uma avaliação</div>
+            <h2>Quer renovar seu ambiente?</h2>
+            <p>Envie o tipo de serviço, o bairro e algumas fotos pelo WhatsApp. Assim a conversa já começa com as informações mais importantes para avaliar sua necessidade.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-light" href="https://wa.me/5511966891429?text=Ol%C3%A1%2C%20GM%20Renova%20Home.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%0A%0AServi%C3%A7o%3A%20%0ABairro%2Fcidade%3A%20%0APosso%20enviar%20fotos%20do%20ambiente." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">GM RENOVA HOME<small>Pintura e acabamento · São Paulo</small></div>
+        <p>Atendimento em São Paulo e Grande São Paulo · WhatsApp: (11) 96689-1429</p>
+        <p>Instagram: @gmrenovahome</p>
+      </div>
+      <a class="btn btn-secondary" href="https://www.instagram.com/gmrenovahome" target="_blank" rel="noopener">Ver Instagram</a>
+    </div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/5511966891429?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">WhatsApp · Pedir orçamento</a>
+</body>
+</html>
